@@ -1,22 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_1473762766_7074292.css">
-    <title>Element</title>
-  <link href="/dev/docs.1aa4d57.css" rel="stylesheet"></head>
-  <body>
-    <div id="app"></div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.runtime.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/vue-router/2.0.1/vue-router.min.js"></script>
-  <script type="text/javascript" src="/dev/manifest.c685daf.js"></script><script type="text/javascript" src="/dev/element-ui.fb831fe.js"></script><script type="text/javascript" src="/dev/docs.6633cda.js"></script></body>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-84335471-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: HtmlWebpackPlugin: could not load file /home/travis/build/ElemeFE/eleme  nt/examples/favicon.ico
+  
+  - index.js:303 
+    [element]/[html-webpack-plugin]/index.js:303:27
+  
+  - util.js:16 tryCatcher
+    [element]/[bluebird]/js/release/util.js:16:23
+  
+  - promise.js:510 Promise._settlePromiseFromHandler
+    [element]/[bluebird]/js/release/promise.js:510:31
+  
+  - promise.js:567 Promise._settlePromise
+    [element]/[bluebird]/js/release/promise.js:567:18
+  
+  - promise.js:612 Promise._settlePromise0
+    [element]/[bluebird]/js/release/promise.js:612:10
+  
+  - promise.js:687 Promise._settlePromises
+    [element]/[bluebird]/js/release/promise.js:687:18
+  
+  - async.js:138 Async._drainQueue
+    [element]/[bluebird]/js/release/async.js:138:16
+  
+  - async.js:148 Async._drainQueues
+    [element]/[bluebird]/js/release/async.js:148:10
+  
+  - async.js:17 Immediate.Async.drainQueues [as _onImmediate]
+    [element]/[bluebird]/js/release/async.js:17:14
+  
+</pre>
