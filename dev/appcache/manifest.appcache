@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:2/22/2017, 10:49:52 AM
+#ver:2/23/2017, 3:35:50 AM
 #plugin:4.6.1
 
 CACHE:
@@ -16,11 +16,10 @@ CACHE:
 /dev/dev/static/resource.a72b8f8.png
 /dev/dev/static/banner-bg.75437e1.svg
 /dev/dev/static/qrcode.a88f522.png
-/dev/dev/docs.614ddce.js
-/dev/dev/element-ui.dc4d754.js
-/dev/dev/manifest.093dcb4.js
-/dev/dev/docs.8b6e83f.css
-/dev/dev/element-ui.d41d8cd.css
+/dev/dev/docs.1016e27.js
+/dev/dev/element-ui.81fc2c5.js
+/dev/dev/manifest.399120f.js
+/dev/dev/docs.9ba3a83.css
 /dev/dev/favicon.ico
 /dev/dev/
 /dev/dev/versions.json
