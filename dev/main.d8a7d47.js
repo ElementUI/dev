@@ -12242,8 +12242,10 @@ var install = function install(Vue) {
 
   Vue.use(_index88.default.directive);
 
-  var ELEMENT = {};
-  ELEMENT.size = opts.size || '';
+  Vue.prototype.$ELEMENT = {
+    size: opts.size || '',
+    zIndex: opts.zIndex || 2000
+  };
 
   Vue.prototype.$loading = _index88.default.service;
   Vue.prototype.$msgbox = _index64.default;
@@ -12252,8 +12254,6 @@ var install = function install(Vue) {
   Vue.prototype.$prompt = _index64.default.prompt;
   Vue.prototype.$notify = _index84.default;
   Vue.prototype.$message = _index102.default;
-
-  Vue.prototype.$ELEMENT = ELEMENT;
 };
 
 /* istanbul ignore if */
@@ -15144,6 +15144,8 @@ var _dom = __webpack_require__(1);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var hasModal = false;
+var hasInitZIndex = false;
+var zIndex = 2000;
 
 var getModal = function getModal() {
   if (_vue2.default.prototype.$isServer) return;
@@ -15171,8 +15173,6 @@ var getModal = function getModal() {
 var instances = {};
 
 var PopupManager = {
-  zIndex: 2000,
-
   modalFade: true,
 
   getInstance: function getInstance(id) {
@@ -15296,6 +15296,20 @@ var PopupManager = {
     }
   }
 };
+
+Object.defineProperty(PopupManager, 'zIndex', {
+  configurable: true,
+  get: function get() {
+    if (!hasInitZIndex) {
+      zIndex = (_vue2.default.prototype.$ELEMENT || {}).zIndex || zIndex;
+      hasInitZIndex = true;
+    }
+    return zIndex;
+  },
+  set: function set(value) {
+    zIndex = value;
+  }
+});
 
 var getTopPopup = function getTopPopup() {
   if (_vue2.default.prototype.$isServer) return;
