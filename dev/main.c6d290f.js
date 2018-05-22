@@ -14075,7 +14075,18 @@ exports.default = {
       type: Boolean,
       default: true
     },
-    index: [Number, Function]
+    index: [Number, Function],
+    sortOrders: {
+      type: Array,
+      default: function _default() {
+        return ['ascending', 'descending', null];
+      },
+      validator: function validator(val) {
+        return val.every(function (order) {
+          return ['ascending', 'descending', null].indexOf(order) > -1;
+        });
+      }
+    }
   },
 
   data: function data() {
@@ -14165,7 +14176,8 @@ exports.default = {
       filterOpened: false,
       filteredValue: this.filteredValue || [],
       filterPlacement: this.filterPlacement || '',
-      index: this.index
+      index: this.index,
+      sortOrders: this.sortOrders
     });
 
     (0, _merge2.default)(column, forced[type] || {});
