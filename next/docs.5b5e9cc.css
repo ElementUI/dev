@@ -9755,7 +9755,7 @@ button, input, select, textarea {
     border-radius: 0; }
     .el-radio-button--mini .el-radio-button__inner.is-round {
       padding: 7px 15px; }
-  .el-radio-button:focus:not(.is-focus):not(:active) {
+  .el-radio-button:focus:not(.is-focus):not(:active):not(.is-disabled) {
     /*获得焦点时 样式提醒*/
     box-shadow: 0 0 2px 2px #409EFF; }
 
@@ -42727,6 +42727,7 @@ button, input, select, textarea {
 /* Break-point
 --------------------------*/
 .el-main {
+  display: block;
   flex: 1;
   flex-basis: auto;
   overflow: auto;
