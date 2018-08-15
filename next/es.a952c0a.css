@@ -1573,6 +1573,14 @@ p[data-v-00b446c6] {
 }
 
 
+.demo-timeline .source .radio {
+  margin-bottom: 20px;
+}
+.demo-timeline .source .radio .el-radio-group {
+  margin-left: 20px;
+}
+
+
 .demo-tooltip.demo-es .el-tooltip + .el-tooltip {
     margin-left: 15px;
 }
