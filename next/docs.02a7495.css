@@ -39696,6 +39696,8 @@ button, input, select, textarea {
   .el-cascader .el-input,
   .el-cascader .el-input__inner {
     cursor: pointer; }
+  .el-cascader .el-input.is-focus .el-input__inner {
+    border-color: #409EFF; }
   .el-cascader .el-input__icon {
     transition: none; }
   .el-cascader .el-icon-arrow-down {
