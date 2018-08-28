@@ -7288,9 +7288,10 @@ button, input, select, textarea {
     content: ""; }
   .el-menu::after {
     clear: both; }
-  .el-menu--horizontal {
-    border-right: none;
+  .el-menu.el-menu--horizontal {
     border-bottom: solid 1px #e6e6e6; }
+  .el-menu--horizontal {
+    border-right: none; }
     .el-menu--horizontal > .el-menu-item {
       float: left;
       height: 60px;
@@ -7330,8 +7331,8 @@ button, input, select, textarea {
       line-height: 36px;
       padding: 0 10px;
       color: #909399; }
-      .el-menu--horizontal .el-menu .el-menu-item.is-active, .el-menu--horizontal .el-menu .el-submenu__title.is-active {
-        color: #303133; }
+    .el-menu--horizontal .el-menu .el-menu-item.is-active, .el-menu--horizontal .el-menu .el-submenu.is-active > .el-submenu__title {
+      color: #303133; }
     .el-menu--horizontal .el-menu-item:not(.is-disabled):hover, .el-menu--horizontal .el-menu-item:not(.is-disabled):focus {
       outline: none;
       color: #303133; }
