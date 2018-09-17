@@ -10732,8 +10732,6 @@ button, input, select, textarea {
     height: 0;
     opacity: 0;
     margin: 0; }
-    .el-switch__input:focus ~ .el-switch__core {
-      outline: 1px solid #409EFF; }
   .el-switch__core {
     margin: 0;
     display: inline-block;
@@ -27590,7 +27588,7 @@ button, input, select, textarea {
       left: auto;
       display: inline-block;
       margin-left: 10px; }
-  .el-form-item.is-required .el-form-item__label:before {
+  .el-form-item.is-required > .el-form-item__label:before {
     content: '*';
     color: #f56c6c;
     margin-right: 4px; }
