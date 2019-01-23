@@ -9039,6 +9039,7 @@ button, input, select, textarea {
   white-space: nowrap;
   outline: none;
   font-size: 14px;
+  margin-right: 30px;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none; }
@@ -9082,8 +9083,8 @@ button, input, select, textarea {
     .el-radio--mini.is-bordered .el-radio__inner {
       height: 12px;
       width: 12px; }
-  .el-radio + .el-radio {
-    margin-left: 30px; }
+  .el-radio:last-child {
+    margin-right: 0; }
   .el-radio__input {
     white-space: nowrap;
     cursor: pointer;
