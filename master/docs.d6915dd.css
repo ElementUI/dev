@@ -17326,6 +17326,9 @@ button, input, select, textarea {
     text-align: center;
     padding: 20px 3px;
     cursor: pointer; }
+    .el-month-table td.today .cell {
+      color: #409EFF;
+      font-weight: bold; }
     .el-month-table td.disabled .cell {
       background-color: #f5f7fa;
       cursor: not-allowed;
@@ -17464,6 +17467,9 @@ button, input, select, textarea {
     text-align: center;
     padding: 20px 3px;
     cursor: pointer; }
+    .el-year-table td.today .cell {
+      color: #409EFF;
+      font-weight: bold; }
     .el-year-table td.disabled .cell {
       background-color: #f5f7fa;
       cursor: not-allowed;
