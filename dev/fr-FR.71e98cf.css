@@ -1250,8 +1250,6 @@ p[data-v-0beaf504] {
   line-height: 120px;
   color: #666;
   font-size: 13px;
-  transition: color .15s linear;
-
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin-right: -1px;
@@ -1275,15 +1273,16 @@ p[data-v-0beaf504] {
   font-size: 32px;
   margin-bottom: 15px;
   color: #606266;
+  transition: color .15s linear;
 }
 .icon-list li .icon-name {
   display: inline-block;
   padding: 0 3px;
   height: 1em;
-  color: #606266;
+  transition: color .15s linear;
 }
-.icon-list li:hover {
-    color: rgb(92, 182, 255);
+.icon-list li:hover i, .icon-list li:hover span{
+  color: rgb(92, 182, 255);
 }
 
 
@@ -1564,6 +1563,14 @@ p[data-v-0beaf504] {
 
 .demo-box .el-date-editor + .el-date-editor {
     margin-left: 10px;
+}
+
+
+.demo-timeline .source .radio {
+  margin-bottom: 20px;
+}
+.demo-timeline .source .radio .el-radio-group {
+  margin-left: 20px;
 }
 
 
